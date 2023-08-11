@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membership Plans</title>
+</head>
+<body>
+    <h1>Membership Plans</h1>
+    <ul>
+        {% for plan in plans %}
+        <li>{{ plan.name }} - Duration: {{ plan.duration }} - Price: {{ plan.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+{% comment %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership Plans</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .plan {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .plan h2 {
+    margin-top: 0;
+  }
+  .plan p {
+    margin-bottom: 10px;
+  }
+  .plan .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Membership Plans</h1>
+  <div class="plan">
+    <h2>Basic Plan</h2>
+    <p>Access to gym facilities</p>
+    <p>Access to selected group classes</p>
+    <p>Use of cardio equipment</p>
+    <p>Price: <span class="price">$29.99/month</span></p>
+  </div>
+  <div class="plan">
+    <h2>Premium Plan</h2>
+    <p>Full access to gym facilities</p>
+    <p>Access to all group classes</p>
+    <p>Use of all equipment</p>
+    <p>Personal trainer sessions</p>
+    <p>Price: <span class="price">$49.99/month</span></p>
+  </div>
+  <!-- Add more membership plans here -->
+</div>
+</body>
+</html> {% endcomment %}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Trainer</title>
+</head>
+<body>
+    <h1>Add New Trainer</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Add Trainer">
+    </form>
+</body>
+</html>
+
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Trainer Management</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .trainer-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    float: left;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+  }
+  .trainer-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  .trainer-name {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .trainer-specialty {
+    color: #888;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Gym Trainer Management</h1>
+  </header>
+  <div class="container">
+    <div class="trainer-card">
+      <img src="trainer1.jpg" alt="Trainer 1">
+      <div class="trainer-name">John Doe</div>
+      <div class="trainer-specialty">Strength Training</div>
+    </div>
+    <div class="trainer-card">
+      <img src="trainer2.jpg" alt="Trainer 2">
+      <div class="trainer-name">Jane Smith</div>
+      <div class="trainer-specialty">Cardio Fitness</div>
+    </div>
+    <div class="trainer-card">
+      <img src="trainer3.jpg" alt="Trainer 3">
+      <div class="trainer-name">Mike Johnson</div>
+      <div class="trainer-specialty">Yoga & Meditation</div>
+    </div>
+    <!-- Add more trainer cards here -->
+  </div>
+</body>
+</html> {% endcomment %}

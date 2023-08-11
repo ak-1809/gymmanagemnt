@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trainers List</title>
+</head>
+<body>
+    <h1>Trainers List</h1>
+    <ul>
+        {% for trainer in trainers %}
+        <li>{{ trainer.name }} - Expertise: {{ trainer.expertise }} - Contact: {{ trainer.contact }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html> 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Gym Equipment</title>
+</head>
+<body>
+    <h1>Add New Gym Equipment</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Add Equipment">
+    </form>
+</body>
+</html> 
+
+{% comment %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipment Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .equipment-item {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Equipment Page</h1>
+  </header>
+  <div class="container">
+    <div class="equipment-item">
+      <h2>Equipment Item 1</h2>
+      <p>Description of Equipment Item 1.</p>
+      <img src="equipment1.jpg" alt="Equipment 1">
+    </div>
+    <div class="equipment-item">
+      <h2>Equipment Item 2</h2>
+      <p>Description of Equipment Item 2.</p>
+      <img src="equipment2.jpg" alt="Equipment 2">
+    </div>
+    <div class="equipment-item">
+      <h2>Equipment Item 3</h2>
+      <p>Description of Equipment Item 3.</p>
+      <img src="equipment3.jpg" alt="Equipment 3">
+    </div>
+  </div>
+</body>
+</html> {% endcomment %} {% endcomment %}

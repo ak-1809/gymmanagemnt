@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Tracking</title>
+</head>
+<body>
+    <h1>Attendance Tracking</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="attendance_date">Date:</label>
+        <input type="date" name="attendance_date" required>
+        <table>
+            <tr>
+                <th>Member</th>
+                <th>Attendance Status</th>
+            </tr>
+            {% for member in members %}
+            <tr>
+                <td>{{ member.first_name }} {{ member.last_name }}</td>
+                <td>
+                    <input type="checkbox" name="{{ member.id }}" value="present"> Present
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <input type="submit" value="Submit Attendance">
+    </form>
+</body>
+</html>
+
+{% comment %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Attendance</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Gym Attendance</h1>
+  <form id="attendanceForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="date">Date:</label>
+    <input type="text" id="date" name="date" placeholder="YYYY-MM-DD" required>
+    
+    <label for="time">Time:</label>
+    <input type="text" id="time" name="time" placeholder="HH:MM AM/PM" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html> {% endcomment %}

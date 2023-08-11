@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Our Gym</title>
+</head>
+<body>
+    <h1>Welcome to Our Gym</h1>
+    <p>Thank you for choosing our gym for your fitness journey.</p>
+    <p>Please explore the sections below:</p>
+    <ul>
+        <li><a href="{% url 'member_list' %}">Member List</a></li>
+        <li><a href="{% url 'add_member' %}">Add Member</a></li>
+        <li><a href="{% url 'membership_plans' %}">Membership Plans</a></li>
+        <!-- Add more links for other sections as needed -->
+    </ul>
+</body>
+</html>

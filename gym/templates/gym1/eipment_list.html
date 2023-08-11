@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Equipment List</title>
+</head>
+<body>
+    <h1>Gym Equipment List</h1>
+    <ul>
+        {% for item in equipment %}
+        <li>{{ item.name }} - Manufacturer: {{ item.manufacturer }} - Quantity: {{ item.quantity }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+{% comment %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipment List</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .add-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .add-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Equipment List</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Equipment ID</th>
+        <th>Equipment Name</th>
+        <th>Equipment Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Treadmill</td>
+        <td>Cardio</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Barbell</td>
+        <td>Strength</td>
+      </tr>
+      <!-- Add more equipment rows here -->
+    </tbody>
+  </table>
+  <a class="add-button" href="#">Add Equipment</a>
+</div>
+</body>
+</html>
+ {% endcomment %}

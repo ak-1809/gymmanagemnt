@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Schedule</title>
+</head>
+<body>
+    <h1>Gym Schedule</h1>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+        {% for item in schedule %}
+        <tr>
+            <td>{{ item.day }}</td>
+            <td>{{ item.time }}</td>
+            <td>{{ item.activity }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+{% comment %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Schedule</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .add-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .add-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Gym Schedule</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Activity</th>
+        <th>Instructor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>10:00 AM - 11:00 AM</td>
+        <td>Yoga Class</td>
+        <td>John Doe</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>3:00 PM - 4:00 PM</td>
+        <td>Cardio Workout</td>
+        <td>Jane Smith</td>
+      </tr>
+      <!-- Add more schedule rows here -->
+    </tbody>
+  </table>
+  <a class="add-button" href="#">Add Schedule</a>
+</div>
+</body>
+</html> {% endcomment %}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Members List</title>
+</head>
+<body>
+    <h1>Gym Members List</h1>
+    <ul>
+        {% for member in members %}
+        <li>{{ member.first_name }} {{ member.last_name }} - Email: {{ member.email }} - Phone: {{ member.phone }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+{% comment %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member List</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Member List</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Member ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>(123) 456-7890</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane</td>
+        <td>Smith</td>
+        <td>jane@example.com</td>
+        <td>(987) 654-3210</td>
+      </tr>
+      <!-- Add more member rows here -->
+    </tbody>
+  </table>
+</div>
+</body>
+</html> {% endcomment %}
